@@ -10,11 +10,12 @@ How to run:
 
 1 - Clone this repository to your working directory using git clone and the URL of this repository.
 2 - Using conda create the MASDA_pipe environment from the .yaml file contained in the environment directory.
-2.2 (OPTIONAL) - If the user is using a AmpliSeq primer panel, they will have to download the panel files and extract the amplicon sequences from the .bed file. The Scripts directory also contains a script for that.
+2.2 (OPTIONAL) - If the user is using a AmpliSeq primer panel, they will have to download the panel files and extract the amplicon sequences from the .bed file.
 3 - With the scripts contained in the scripts directory, the user must generate the .gff file for each reference it will use for the alignments (both desing multifasta and amplicon desgined multifasta).
-4 - Install nextflow.
-4.2 (OPTIONAL) Modify MASDA_main.nf default paths to match your files.
-5 - run the pipeline in the cmd with the following command:
-$ nextflow run MASDA_main.nf --help
+4 - With the bowtie2 from the environment, the user must build the two references (primer design multifasta and extracted amplicons multifasta) using the bowtie2-build command.
+5 - Install nextflow.
+5.2 (OPTIONAL) Modify MASDA_main.nf default paths to match your files.
+6 - run the pipeline in the cmd with the following command:
+    $ nextflow run MASDA_main.nf --help
                                                                                                         
 If that works it means the pipeline should work correctly. All the programs will be ran from the environment so the step 2 is crucial.
