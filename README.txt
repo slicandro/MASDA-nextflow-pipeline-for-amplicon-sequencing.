@@ -4,11 +4,15 @@ Massive Amplicon Sequencing Data Analysis pipeline
 
 MASDA pipe is a Nextflow-based pipeline developed for the analysis of amplicon sequencing data generated using AmpliSeq / AgriSeq panels on Ion Torrent platforms. While optimized for these technologies, the pipeline can be adapted for other amplicon sequencing panels.
 
-The pipeline processes each sample independently, performing quality control, filtering, alignment, and read quantification to determine presence/absence of panel targets.
+The pipeline processes each sample independently, performing quality control, filtering, alignment, and read quantification.
 
 Pipeline overview
 
 For each sample, MASDA pipe performs the following steps:
+
+0. Quality Check with Fastqc
+
+The pipeline generates a Fastqc report for each sample.
 
 1. Read preprocessing
 
