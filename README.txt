@@ -115,12 +115,8 @@ Notes
 
 Step 2 (Conda environment creation) is mandatory for correct execution.
 
-All tools are executed via Conda; container-based execution (Docker/Singularity) may be added in future versions.
-
-License
-
-[Add license information here]
+All tools are executed via Conda.
 
 Contact
 
-[Add contact or maintainer information here]
+slicandro@iibce.edu.uy
